@@ -7,6 +7,11 @@ pipeline {
                 sh 'ruby --version'
             }
         }
+	stage('Test') {
+	   steps {
+	         echo 'Test....'
+		 }
+	}
     }
     
 }
