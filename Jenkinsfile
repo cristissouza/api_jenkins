@@ -9,8 +9,8 @@ pipeline {
         }
 	stage('Test') {
 	   steps {
-	           'bundle install'
-  		   'bundle exec rspec testPokemonAPI.rb'
+	          sh 'bundle install'
+  		  sh 'bundle exec rspec testPokemonAPI.rb'
 
 		 }
 	}
